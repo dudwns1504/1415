@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CateActivity"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#dddddd"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="카테고리"
+            android:textColor="#ffffff"
+            android:textSize="40dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="520dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="50dp"
+        tools:ignore="MissingConstraints"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/haru"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="80dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="봄"
+                    android:textSize="40dp"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#000000"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/natu"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="여름"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:textSize="40dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="235dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/aki"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="40dp"
+                    android:text="가을"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/huyu"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="30dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:text="겨울"
+                    android:textSize="40dp"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EEEEEE"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="570dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageButton
+            android:id="@+id/HomeButton"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:src="@drawable/ic_home_black_24dp"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="632dp" />
+
+        <ImageButton
+            android:id="@+id/ShopButton"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:src="@drawable/ic_shopping_cart_black_24dp"
+            tools:layout_editor_absoluteX="102dp"
+            tools:layout_editor_absoluteY="632dp" />
+
+        <ImageButton
+            android:id="@+id/CateButton"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:background="#eeeeee"
+            android:src="@drawable/ic_assignment_black_24dp"
+            tools:layout_editor_absoluteX="202dp"
+            tools:layout_editor_absoluteY="632dp" />
+
+        <ImageButton
+            android:id="@+id/SettingButton"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:background="#ffffff"
+            android:src="@drawable/ic_settings_black_24dp"
+            tools:layout_editor_absoluteX="305dp"
+            tools:layout_editor_absoluteY="632dp" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
