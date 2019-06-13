@@ -669,7 +669,7 @@ implementation 'com.squareup.picasso:picasso:2.5.2'
 }
     ```
    
-# 4. **실시간채팅**
+# 3. **실시간채팅**
 
  <br>![실시간 데이터 베이스](https://user-images.githubusercontent.com/48505912/59396919-b8cc9600-8dc5-11e9-9431-84397660bdac.PNG)
   <br>
