@@ -517,6 +517,7 @@ implementation 'com.squareup.picasso:picasso:2.5.2'
     4. CardView를 클릭하면 7일치 날씨 정보 확인가능<br>
     ![weather1](https://user-images.githubusercontent.com/48273829/59383393-cddfff80-8d9a-11e9-98f0-24d5f819dfa3.JPG)
     ```
+    //cardview를 클릭하면 weatherdetail로 
      adapter = new CityWeatherAdapter(cities, R.layout.weather_card, this, new CityWeatherAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(CityWeather cityWeather, int position, View clickView) {
@@ -530,6 +531,9 @@ implementation 'com.squareup.picasso:picasso:2.5.2'
             }
         });
 
+    ```
+    ```
+    
     ```
    
 # 4. **실시간채팅**
