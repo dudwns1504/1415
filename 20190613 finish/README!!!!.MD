@@ -97,8 +97,9 @@
     // Email 과 Password를 입력 받고 Firebase에 등록
     public class SignUpActivity extends AppCompatActivity {
      ...   
-     super.onCreate(R.layout_sign_up);
-
+     super.onCreate(savedInstanceState);
+     setContentView(R.layout.activity_sign_up);
+     
     firebaseAuth = FirebaseAuth.getInstance(); // FireBase의 Authentication 초기화
 
     ...
@@ -122,7 +123,9 @@
     // 등록된 Email 과 Password로 로그인
     public class loginActivity extends AppCompatActivity {
         ...
-        super.onCreate(R.layout_activity_login);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
+        
         firebaseAuth = FirebaseAuth.getInstance();// FireBase의 Authentication 초기화
 
 
@@ -145,7 +148,9 @@
     // 등록된 이메일로 비밀번호 재설정 메일을 보냄
     public class PasswordResetActivity extends AppCompatActivity {
         ...
-        super.onCreate(R.layout_activity_login);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_password_reset);
+        
         firebaseAuth = FirebaseAuth.getInstance();// FireBase의 Authentication 초기화
         private void send(){
         String email = ((EditText)findViewById(R.id.sendEmail)).getText().toString();
@@ -536,6 +541,7 @@ implementation 'com.squareup.picasso:picasso:2.5.2'
     //weatherdetails class
     public class WeatherDetails extends AppCompatActivity {
     //bindview를 사용하여 weather_details layout 에 있는 부분을 id 값 지성
+    //bindview를 사용하면 번거로운 findViewById()의 사용을 줄일수 있습니다.
     @BindView(R.id.textViewCardCityName)
     TextView textViewCityName;
     @BindView(R.id.textViewCardWeatherDescription) TextView textViewWeatherDescription;
