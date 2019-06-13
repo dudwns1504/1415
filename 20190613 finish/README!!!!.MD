@@ -1092,8 +1092,8 @@ history = model.fit(train_generator,
 * epochs = 학습 횟수<br>
 경로 : lite\examples\image_classification\android\app\src\main\assets <br>(Models.tffile, labels)
 <br>
-![asdfasdfasdfsadfsa](https://user-images.githubusercontent.com/48273803/59400965-18ca3900-8dd4-11e9-82f2-d94f48d43086.jpg)
-<br>브랜드, 브랜드의 시장점유율, 로고 유사도 순 출력
+ ![asdfasdfasdfsadfsa](https://user-images.githubusercontent.com/48273803/59400965-18ca3900-8dd4-11e9-82f2-d94f48d43086.jpg)
+ <br>브랜드, 브랜드의 시장점유율, 로고 유사도 순 출력
 
 
 ## **7. 구글스피치**
